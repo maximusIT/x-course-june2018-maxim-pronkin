@@ -1,0 +1,355 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(to bottom, #acc6e1, #e6ebef) no-repeat;;
+}
+
+.main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.orders-detail, .order-inf{
+    box-sizing: border-box;
+}
+
+.orders-detail{
+    width: 25%;
+    height: 96vh;
+    float: left;
+    background: white;
+    border-right: 1px solid white;
+}
+
+i.fa-search:hover, i.fa-refresh:hover{
+    cursor: pointer;
+}
+
+i.fa-search, i.fa-refresh{
+    font-size: 12px;
+}
+
+
+
+.orders-detail .orders-detail-head{
+    padding: 5px 2px 2px 1px;
+    text-align: center;
+    height: 9vh ;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.orders-detail .orders-detail-head .return-btn{
+    float: left;
+    padding-left: 15px;
+    font-size: 24px;
+    color: #3268b0;
+}
+
+.orders-detail .orders-detail-head .head-title{
+    color: #6e6465;
+}
+
+.orders-detail .orders-detail-head .search-area{
+    text-align: left;
+    padding: 3px 7px;
+    margin: 10px 2px 1px 2px;
+    border: 1px solid #c0c0c0;
+}
+
+.orders-detail .orders-detail-head .search-area .search-input{
+    width: 70%;
+    border: 0;
+    background: inherit;
+}
+
+.orders-detail .orders-detail-head .search-area input:active, .search-area input:focus{
+    outline: none;
+}
+
+.orders-detail .orders-detail-head .search-area span{
+    float: right;
+    color: #3268b0;
+}
+
+.orders-detail .orders-detail-head .search-area span .fa-search{
+    margin-right: 15px;
+}
+
+
+
+.orders-detail .orders-content .orders-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 86vh;
+    overflow-y: auto;
+}
+
+.orders-detail .orders-content .orders-list .orders-item {
+    padding: 15px;
+    border-bottom: 1px solid #e1e5e8;
+    color: #333333;
+}
+
+.orders-detail .orders-content .orders-list .orders-item.active,
+.orders-detail .orders-content .orders-list .orders-item:hover{
+    background-color: #e8eff7;
+    cursor: pointer;
+}
+
+.orders-detail .orders-content .orders-list .orders-item .order-title{
+    font-size: 18px;
+}
+
+.orders-detail .orders-content .orders-list .orders-item .order-date{
+    float: right;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.orders-detail .orders-content .orders-list .orders-item .customer-name,
+.orders-detail .orders-content .orders-list .orders-item .shipped-date{
+    font-size: 15px;
+    color: #70716e ;
+}
+
+.orders-detail .orders-content .orders-list .orders-item .order-status-1{
+    color: #739b48;
+}
+
+.orders-detail .orders-content .orders-list .orders-item .order-status-2{
+    color: #e79f4d;
+}
+
+.orders-detail .orders-content .orders-list .orders-item .order-status-1,
+.orders-detail .orders-content .orders-list .orders-item .order-status-2{
+    float: right;
+}
+
+.orders-detail .orders-content .orders-list .orders-item .item-middle{
+    margin: 8px 0;
+}
+
+
+
+.order-inf{
+    width: 75%;
+    height: 96vh;
+    float: right;
+    background: #fafafa;
+    overflow-y: auto;
+}
+
+.order-inf .inf-title{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    background: #eff4f8;
+    color: #73787b;
+    border-bottom: 1px solid #e4edf4;
+}
+
+.order-inf .inf-head{
+    background: #eff4f8;
+    padding: 35px 30px 0 30px;
+    border-bottom: 2px solid #cfe1f0;
+}
+
+.order-inf .inf-head .main-inf{
+    margin-top: 10px;
+}
+
+.order-inf .inf-head .main-inf span{
+    display: block;
+    line-height: 28px;
+    font-size: 15px;
+    color: #70716e;
+}
+
+.order-inf .inf-head .order-title{
+    text-align: left;
+    font-size:19px;
+    color: #333333;
+}
+
+.order-inf .inf-head .order-cost{
+    float: right;
+    font-size: 20px;
+    line-height: 20px;
+    color: #6b7a86;
+}
+
+.order-inf .inf-head .order-currency{
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    color: #6b7a86;
+    font-weight: 200;
+}
+
+
+.order-inf .inf-head .tabs{
+    margin-top: 25px;
+}
+
+.order-inf .inf-head .tabs span i{
+    padding: 9px;
+    border-radius: 70%;
+    border: 2px solid #437dad;
+    color: #437dad ;
+}
+
+.order-inf .inf-head .tabs span.active i,
+.order-inf .inf-head .tabs span i:hover{
+    color: #fbfbfb;
+    background-color: #437dad;
+    cursor: pointer;
+}
+
+.order-inf .inf-head .tabs span.active{
+    border-bottom: 2px solid #437dad;
+}
+
+.order-inf .inf-head .tabs span i.fa-user{
+    padding: 9px 14px;
+    border-radius: 70%;
+    border: 2px solid ;
+}
+
+.order-inf .inf-head .tabs span{
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-right: 20px;
+    margin-bottom: -2px;
+}
+
+
+.order-inf .inf-middle{
+    background: #ffffff;
+    border-bottom: 2px solid #dde7ee;
+    padding: 20px 15px;
+}
+
+.order-inf .inf-middle .mid-title{
+    text-align: left;
+    display: block;
+    border-bottom: 1px solid #e5e5e5;
+    font-size:20px;
+    color: #6a6c7a;
+    padding: 0 0 10px 16px;
+    margin-bottom: 15px;
+}
+
+.order-inf .inf-middle .address-info{
+    padding-left: 15%;
+}
+
+.order-inf .inf-middle .cell-field{
+    text-align: right;
+    font-size: 15px;
+    color: #6d6b6b;
+}
+
+.order-inf .inf-middle .cell-data{
+    padding-left: 10px;
+    color: #333333;
+}
+
+
+
+.inf-bottom{
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.inf-bottom p{
+    font-size:18px;
+    padding-left: 15px;
+    color: #464545;
+    margin: 10px 0;
+}
+
+.inf-bottom .line-items{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.inf-bottom .line-items .td-name{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.inf-bottom .line-items .td-total{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.inf-bottom .line-items th{
+    font-weight: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #6a6c7a;
+}
+
+.inf-bottom .line-items .column-name{
+    border-top: 1px solid #dedede;
+    border-bottom: 2px solid #e6e6e6;
+    background-color: #f7f7f7;
+}
+
+.inf-bottom .line-items .table-row{
+    background-color: #ffffff;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.inf-bottom .line-items .table-row td{
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.inf-bottom .line-items .table-row td>span{
+    font-weight: bold;
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    height: 4vh;
+}
+
+.detail-footer{
+    border-right: 1px solid white;
+    width: 25%;
+}
+
+.detail-footer .fa-bars{
+    margin-left: 20px;
+}
+
+.inf-footer{
+    width: 75%;
+}
+
+.detail-footer, .inf-footer{
+    text-align: right;
+    color: white;
+    float: left;
+    box-sizing: border-box;
+    padding: 8px;
+    display: inline-block;
+    height: inherit;
+    background-color: #2f3b47;
+}
+
+.detail-footer span i:hover, .inf-footer span i:hover{
+    cursor: pointer;
+}
